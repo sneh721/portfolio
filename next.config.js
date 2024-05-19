@@ -7,16 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
  */
 function getBasePath() {
   function getBasePath() {
-    var basePath = undefined
-
-    if (isProd && process.env.BASE_PATH) {
-      if (process.env.BASE_PATH.startsWith("/")) {
-        basePath = process.env.BASE_PATH;
-      } else {
-        basePath = "/" + process.env.BASE_PATH;
-      }
-    }
-    return basePath
+    return '/portfolio'
   }
 }
 
