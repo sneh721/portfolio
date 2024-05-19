@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === 'production'
  * https://stackoverflow.com/questions/60452054/nextjs-deploy-to-a-specific-url-path
  */
 function getBasePath() {
-  return '/portfolio'
+  return '/portfolio.\n'
 }
 
 const basePath = getBasePath()
