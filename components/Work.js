@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link'
+import Link from 'next/link';
 
 export const Skills = ({ title, cards }) => {
 	return (
@@ -13,13 +13,14 @@ export const Skills = ({ title, cards }) => {
 							key={index}
 							title={value.title}
 							description={value.description}
-							link={value.link} />
+							link={value.link}
+						/>
 					))}
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export const Projects = ({ title, cards }) => {
 	return (
@@ -32,16 +33,17 @@ export const Projects = ({ title, cards }) => {
 							key={index}
 							title={value.title}
 							description={value.description}
-							icons={value.icons} />
+							icons={value.icons}
+						/>
 					))}
 				</div>
 				{/* <div className="text-center">
-					<button type="button" className="btn btn-outline-light">See More</button>
-				</div> */}
+          <button type="button" className="btn btn-outline-light">See More</button>
+        </div> */}
 			</div>
 		</div>
 	);
-}
+};
 
 export const Card = ({ title, description, icons }) => {
 	return (
@@ -50,7 +52,7 @@ export const Card = ({ title, description, icons }) => {
 			<p className="text-dark">{description}</p>
 			<div className="text-end">
 				{icons && icons.map((value, index) => (
-					<Link key={index} href={value.link}>
+					<Link key={index} href={value.link} legacyBehavior>
 						<a target="_blank" rel="noreferrer">
 							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="2x" />
 						</a>
@@ -59,4 +61,4 @@ export const Card = ({ title, description, icons }) => {
 			</div>
 		</div>
 	);
-}
+};

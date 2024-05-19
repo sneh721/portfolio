@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 export const Nav = ({ title, links }) => {
 
@@ -10,8 +10,7 @@ export const Nav = ({ title, links }) => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-secondary">
       <div className="container">
-        <Link href="/">
-          {/* <Image src={Logo} alt="Logo" width="36" height="36" className="vertical-align-middle" /> */}
+        <Link href="/" legacyBehavior>
           <a className="navbar-brand">
             <span className="">{title}</span>
           </a>
@@ -34,7 +33,7 @@ export const Nav = ({ title, links }) => {
         >
           <div className="navbar-nav">
             {links.map((value, index) => (
-              <Link key={index} href={value.link} >
+              <Link key={index} href={value.link} legacyBehavior>
                 <a className="nav-link">{value.title}</a>
               </Link>
             ))}

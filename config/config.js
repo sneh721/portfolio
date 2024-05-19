@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Sneh",
   links: [
     {
       title: "About",
@@ -22,15 +22,11 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
-    }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hi, I'm Sneh",
+  description: "A Software developer currently working in computer vision.",
   image: profile.src,
   buttons: [
     {
@@ -40,7 +36,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://drive.google.com/file/d/1b_m2sMPuJzxRG56cLGiZOIW14CXl7UV7/view?usp=sharing",
       isPrimary: false,
     },
   ],
@@ -49,9 +45,8 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I am currently pursuing a Master’s in Computer Science (Machine Learning) at Georgia Tech, and have graduated with a Bachelor’s in Computer Science and Biology at the University of Washington.",
+    "I have a strong background in machine learning and computer vision through my internship with The Main Branch, a startup who provides vision detecting systems to clients.",
   ],
 }
 
